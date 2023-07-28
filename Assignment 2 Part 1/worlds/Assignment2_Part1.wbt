@@ -1,0 +1,107 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/BrushedAluminium.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3533914154920991 0.30207969891864206 0.8853600188385023 1.8459132205747202
+  position 0.3284960164236935 -4.754812547400664 4.3160113587017594
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+  floorTileSize 3 3
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "floor2.jpg"
+      ]
+    }
+    roughness 1
+    roughnessMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/parquetry/mosaic_parquetry_roughness.jpg"
+      ]
+    }
+    metalness 0
+    normalMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/parquetry/mosaic_parquetry_normal.jpg"
+      ]
+    }
+    occlusionMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/parquetry/mosaic_parquetry_occlusion.jpg"
+      ]
+    }
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 0 0 0
+  }
+}
+SolidBox {
+  translation 1.01231 0.901983 0.05
+  name "blue_box"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.851061 -0.772583 0.05
+  name "red_box"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+E-puck {
+  hidden rotation_1 0.9974899698748769 -0.07080790915579128 -4.791705361665065e-08 2.9802322387695313e-08
+  hidden rotation_2 -0.9992999326267432 -0.03741182503142443 -6.670622651098836e-08 2.9802322387695313e-08
+  translation 0.23114199990325013 -0.9869270000001663 -6.647186555904655e-05
+  rotation 0.7457578436073043 0.6662171107813919 -5.273947057249559e-07 3.2742593199385158e-09
+  controller "Assignment2_Part1_Controller"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
+SolidBox {
+  translation 1.19435 -0.120006 0.05
+  name "green_box"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
