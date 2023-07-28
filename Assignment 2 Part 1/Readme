@@ -1,0 +1,8 @@
+This folder contains the v1 of Webots Arena
+Currently this implementation achieves:
+Color detection
+Obstacle avoidance
+
+Improvements to be made:
+Improve color detection by using opencv filters if possible to avoid false detection
+Allow robot to be randomly placed by using a supervisor robot (optional)
