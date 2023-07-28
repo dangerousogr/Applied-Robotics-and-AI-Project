@@ -1,0 +1,34 @@
+1st model set:
+optimizer --> sgd
+epochs --> 10
+accuracy --> 0.6216999888420105
+
+2nd model set:
+optimizer --> adam
+epochs --> 10
+accuracy --> 0.6929000020027161
+
+3rd model set:
+optimizer --> sgd
+epochs --> 15
+accuracy --> 0.6535000205039978
+
+4th model set:
+optimzier --> adam
+epochs --> 15
+accuracy --> 0.6991999745368958
+
+5th model set:
+optimizer --> first with sgd, then with adam
+epochs --> total 20
+accuracy --> 0.6988000273704529
+
+6th model set:
+optimzier --> first with sgd, then with adam
+epochs --> total 30
+accuracy --> 0.7034000158309937
+
+7th model set(just for trying):
+optimizer --> first with adam, then with sgd
+epochs --> total 20
+accuracy --> 
