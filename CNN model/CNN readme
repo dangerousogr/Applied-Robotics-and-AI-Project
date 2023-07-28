@@ -1,0 +1,5 @@
+In this folder, you will find our CNN model V1 using CIFAR-10 dataset for object recognition
+In practice, we will retrieve images from the robot camera and run it through this model for object detection.
+This particular model uses a combination of sgd and adam optimizer with 15 epochs each for its training and has an accuracy value of 0.7034000158309937
+
+V2 of this model may have iimproved accuracy and other functions which can be explored at a later time if the results are unsatisfactory.
