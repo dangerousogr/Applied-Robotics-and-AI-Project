@@ -174,6 +174,7 @@ class ARAP:
         width = self.camera.getWidth()
         height = self.camera.getHeight()
         image = self.camera.getImage()
+        self.camera.saveImage("image.jpg", 100)
         
         # Capture new image after interval (no. of steps) has passed
         if self.camera_interval >= interval:
@@ -193,7 +194,7 @@ class ARAP:
             self.camera_interval += 1
         
         #print("Camera: R =", self.red, ", G =", self.green, ", B =", self.blue)  # DEBUG
-        return self.red, self.green, self.blue
+        return self.red, self.green, self.blue, image
     
     #def get_recognised_object(self):
         #firstObject = self.camera.getRecognitionObjects()[0]
